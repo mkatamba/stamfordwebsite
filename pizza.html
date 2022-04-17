@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello Stamford</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="promoting stamford">
+    <meta name="keywords" content="Hello stamford">
+    <meta name="author" content="medi katamba">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap"></noscript>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/nav.css" />
+
+    <script src="jscript/script.js" defer></script>
+    <script src="jscript/nav.js" defer></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<style>
+
+</style>
+<body>
+</head>
+<body>
+<div class="Container">
+    <div class="Header">
+        <div class="HeaderText">
+            <div id="Logo">
+                <img src="images/stamfd1.png" alt="Hello stamford" />
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="topnav" id="myTopnav">  
+      <a href="index.html"><i class="fas fa-home"></i> HOME</a>
+      <a href="food.html"><i class="fas fa-utensils"></i> FOOD & DRINK</a>
+      <a href="places.html"><i class="fas fa-city"></i> PLACES TO VISIT</a>
+      <a href="history.html"><i class="fas fa-history"></i> HISTORY</a>
+      <a href="things.html"><i class="fas fa-users"></i> ACTIVITIES</a>
+      <a href="contact.html"><i class="fas fa-comment"></i> CONTACT US</a>
+      <a href="video.html"><i class="fa-solid fa-video"></i> CAPTURE A MOMENT</a>
+      <input type="text" id="input_data" placeholder="Search stamford.." class="inputsearch"><input type="button" id="search_button" class="btnsearch" value="Go" onclick="search_data();">
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+  </div>
+    
+</div>
+</div>
+</div>
+<!-- Start Content -->
+<div id="home" class="w3-content">
+
+<!-- Menu -->
+<div id="menu" class="w3-container w3-black w3-xxlarge w3-padding-64">
+<h1 class="w3-center w3-jumbo w3-padding-32">THE RESTAURANT MENU</h1>
+<div class="w3-row w3-center w3-border w3-border-dark-grey">
+<a href="#pizza"><div class="w3-third w3-padding-large w3-red">Pizza</div></a>
+<a href="#pasta"><div class="w3-third w3-padding-large w3-hover-red">Fish&Chips</div></a>
+<a href="#starters"><div class="w3-third w3-padding-large w3-hover-red">Starters</div></a>
+</div>
+
+<div id="pizza" class="w3-container w3-white w3-padding-32">
+
+<h1><b>Margherita</b> <span class="w3-right w3-tag w3-dark-grey w3-round">£12.50</span></h1>
+<p class="w3-text-grey">Fresh tomatoes, fresh mozzarella, fresh basil</p>
+
+<hr>
+<h1><b>Formaggio</b> <span class="w3-right w3-tag w3-dark-grey w3-round">£15.50</span></h1>
+<p class="w3-text-grey">Four cheeses (mozzarella, parmesan, pecorino, jarlsberg)</p>
+
+<hr>
+<h1><b>Chicken</b> <span class="w3-right w3-tag w3-dark-grey w3-round">£17.00</span></h1>
+<p class="w3-text-grey">Fresh tomatoes, mozzarella, chicken, onions</p>
+
+<hr>
+<h1><b>Pineapple'o'clock</b> <span class="w3-right w3-tag w3-dark-grey w3-round">£16.50</span></h1>
+<p class="w3-text-grey">Fresh tomatoes, mozzarella, fresh pineapple, bacon, fresh basil</p>
+
+<hr>
+<h1><b>Meat Town</b> <span class="w3-tag w3-red w3-round">Hot!</span>
+<span class="w3-right w3-tag w3-dark-grey w3-round">£20.00</span></h1>
+<p class="w3-text-grey">Fresh tomatoes, mozzarella, hot pepporoni, hot sausage, beef, chicken</p>
+</div>
+
+<h1 id="pasta" class="w3-center w3-jumbo w3-padding-32">PASTA</h1>
+<div class="w3-container w3-white w3-padding-32">
+
+<h1><b>Fish code</b> <span class="w3-tag w3-grey w3-round">Popular</span>
+<span class="w3-right w3-tag w3-dark-grey w3-round">£13.50</span></h1>
+<p class="w3-text-grey">Special sauce, Fish, parmesan</p>
+
+<hr>
+<h1><b>Chips&Liver<code></code></b> <span class="w3-right w3-tag w3-dark-grey w3-round">£14.50</span></h1>
+<p class="w3-text-grey">Liver .chips and tomatoes</p>
+
+<hr>
+<h1><b>Sausage&Chips</b> <span class="w3-right w3-tag w3-dark-grey w3-round">£11.00</span></h1>
+<p class="w3-text-grey">Fresh tomatoes, onions</p>
+</div>
+
+<h1 id="starters" class="w3-center w3-jumbo w3-padding-32">STARTERS</h1>
+<div class="w3-container w3-white w3-padding-32">
+
+<h1><b>Today's Soup</b> <span class="w3-tag w3-grey w3-round">Seasonal</span>
+<span class="w3-right w3-tag w3-dark-grey w3-round">£5.50</span></h1>
+<p class="w3-text-grey">Ask the waiter</p>
+
+<hr>
+<h1><b>Bruschetta</b> <span class="w3-right w3-tag w3-dark-grey w3-round">£8.50</span></h1>
+<p class="w3-text-grey">Bread with pesto, tomatoes, onion, garlic</p>
+
+<hr>
+<h1><b>Garlic bread</b> <span class="w3-right w3-tag w3-dark-grey w3-round">£9.50</span></h1>
+<p class="w3-text-grey">Grilled ciabatta, garlic butter, onions</p>
+</div>
+</div>
+</div>
+              
+
+<div class="wrapper" align="center">
+  <a href="#" class="icon facebook">
+    <div class="tooltip">Facebook</div>
+    <span><i class="fab fa-facebook-f"></i></span>
+  </a>
+  <a href="#" class="icon twitter">
+    <div class="tooltip">Twitter</div>
+    <span><i class="fab fa-twitter"></i></span>
+  </a>
+  <a href="#" class="icon instagram">
+    <div class="tooltip">Instagram</div>
+    <span><i class="fab fa-instagram"></i></span>
+  </a>
+  <a href="#" class="icon github">
+    <div class="tooltip">Github</div>
+    <span><i class="fab fa-github"></i></span>
+  </a>
+  <p>Copyright MK 2022
+  
+</div>
+</div>
+</body>
+</html>

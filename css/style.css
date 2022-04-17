@@ -1,0 +1,767 @@
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #880e27;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0px;
+    color: #151515;
+}
+
+p {
+    font-size: 1.2em;
+    display: inline;
+}
+
+h1,
+h2 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+video,
+canvas,
+#screenshot-img {
+    width: 100%
+}
+
+.Spacer {
+    Margin-top: 40px;
+}
+
+a:link,
+a:active,
+a:visited {
+    color: #880e27;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #880e27;
+    text-decoration: underline;
+}
+
+.MsgBackground {
+    position: absolute;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    animation: fade-in 1s;
+    z-index: 2;
+}
+
+.MsgBackground .MsgBox {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #880e27;
+    padding: 20px;
+    border-radius: 1em;
+    flex-direction: column;
+}
+
+.MsgBackground .MsgBox .CloseOpeningTimes {
+    width: 100%;
+    text-align: right;
+}
+
+.MsgBackground .MsgBox .CloseOpeningTimes button {
+    background-color:#81434f;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+}
+
+.MsgBackground .MsgBox td.OpeningTime {
+    text-align: center;
+}
+
+@keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}
+
+div.Container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fbf7f7;
+}
+
+div.Container.Red {
+    background-color: #766363;
+    color: #FFFFFF;
+}
+
+div.Container.Red p {
+    color: #FFFFFF;
+}
+
+div.Container.Red h1,
+div.Container.Red h2 {
+    color: #FFFFFF;
+}
+
+div.Container.Grey {
+    background-color: #333;
+    color: #FFFFFF;
+}
+
+div.Container.Grey p {
+    color: #FFFFFF;
+}
+
+div.Container.Grey h1,
+div.Container.Grey h2 {
+    color: #FFFFFF;
+}
+
+div.Header {
+    background-color: #f7f7f7;
+    text-align: center;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.Header #Logo {
+    max-width: 300px;
+    
+}
+
+div.Header #Logo img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+div.Header .HeaderText {
+    display: table;
+}
+
+
+
+div.Header .HeaderText .Text h1 {
+    color: #880e27;
+    margin: 0px;
+    padding-top: 20px;
+}
+
+div.Header .HeaderText .Text h2 {
+    font-size: 1.2em;
+    color: #333;
+} 
+
+.TopHeader {
+    overflow: hidden;
+}
+
+.TopHeader img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+@media (min-width: 1200px) {   
+    .TopHeader img {
+        margin-top: -100px;
+        margin-bottom: -100px;
+        overflow: hidden;
+    }
+}
+
+@media (min-width: 1600px) {   
+    .TopHeader img {
+        margin-top: -200px;
+        margin-bottom: -200px;
+        overflow: hidden;
+    }
+}
+
+@media (min-width: 1900px) {   
+    .TopHeader img {
+        margin-top: -400px;
+        margin-bottom: -400px;
+        overflow: hidden;
+    }
+}
+
+div.PageContent {
+    padding: 20px;
+    /* margin-left: 50px;
+    margin-right: 50px;
+    */
+    color: #000000;
+    width: 100%;
+}
+
+.TopNav {
+    background-color: #333;
+    overflow: hidden;
+  }
+
+.TopNav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.TopNav li {
+    float: left;
+    display: block;
+    text-align: center;
+}
+
+.TopNav li a {
+    display: block;
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 16px;
+}
+  
+.TopNav li a:hover {
+    background-color: #880e27;
+}
+
+.TopNav li a.active {
+    background-color: #880e27;
+    color: #FFFFFF;
+}
+
+.TopNav li a.active:hover {
+    background-color: #333;
+    color: #FFF;
+}
+
+.TopNav li.Right {
+    float: right;
+}
+  
+.TopNav .icon {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .TopNav li:not(:first-child) {display: none;}
+    .TopNav li.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .TopNav.Responsive {position: relative;}
+    .TopNav.Responsive li.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .TopNav.Responsive li {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+.PageContent h1 {
+    color: #1b1316;
+    font-size: 4em;
+    background-color: rgb(251, 249, 246);
+}
+
+.Grid2,
+.Grid3,
+.Grid4,
+.Grid5 {
+    display: grid;
+    grid-gap: 1px;
+}
+
+.Grid3 .GridItem {
+   
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.Grid3 .GridItem h1,
+.Grid3 .GridItem h2 {
+    color: #080808;
+}
+
+.Grid2 .GridItem img,
+.Grid3 .GridItem img,
+.Grid4 .GridItem img,
+.Grid5 .GridItem img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 767px) {   
+    .Grid2,
+    .Grid3 {
+        grid-template-columns: 1fr;
+    }
+
+    .Grid4,
+    .Grid5 {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .Grid2 .GridItem,
+    .Grid3 .GridItem {
+        padding: 0px;
+    }
+
+    .Grid4 .GridItem,
+    .Grid5 .GridItem {
+        padding: 10px;
+    }
+}
+
+@media (min-width: 768px) {   
+    .Grid2,
+    .Grid3 {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .Grid4,
+    .Grid5 {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .Grid2 .GridItem,
+    .Grid3 .GridItem {
+        padding: 20px;
+    }
+
+    .Grid4 .GridItem,
+    .Grid5 .GridItem {
+        padding: 20px;
+    }
+}
+
+@media (min-width: 992px) {   
+    .Grid2 {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .Grid3 {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .Grid4,
+    .Grid5 {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .Grid2 .GridItem,
+    .Grid3 .GridItem {
+        padding: 20px;
+    }
+
+    .Grid4 .GridItem,
+    .Grid5 .GridItem {
+        padding: 10px;
+    }
+}
+
+@media (min-width: 1200px) {   
+    .Grid2 {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .Grid3 {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .Grid4 {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .Grid5 {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .Grid2 .GridItem,
+    .Grid3 .GridItem {
+        padding: 50px;
+    }
+
+    .Grid4 .GridItem,
+    .Grid5 .GridItem {
+        padding: 10px;
+    }
+}
+
+.ChosenCoffee {
+    background-color: #81434f !important;
+}
+
+p.footer {
+    color: #333333;
+    text-align: center;
+}
+
+@media (max-width: 767px) {   
+    .LeftContent {
+        display: block;
+    }
+
+    .RightSidebar {
+        display: block;
+    }
+}
+
+@media (min-width: 768px) {   
+    .ContentWithSidebar {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        grid-auto-rows: minmax(100px, auto);
+    }    
+    
+    .LeftContent {
+        grid-column: 1 / 4;
+        grid-row: 1;
+    }
+    .RightSidebar {
+        grid-column: 4;
+        grid-row: 1;
+    }
+}
+
+cordinates{
+    text-align: center;
+    
+}
+
+.cards {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    padding-top: 20px;
+  }
+  
+  
+  
+ 
+  
+  html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    font: 1em/1.4 Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #fafafa;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+  .cards {
+    margin: 0 auto;
+    max-width: 960px;
+  }
+  
+  .card {
+    background-color: #fff;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+  }
+  
+  .card header {
+    padding: 10px;
+    background-color: #4a4d4e;
+      color: #fff;
+  }
+  
+  .card header h2 {
+    font-size: 1.4rem;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .card .body {
+    padding: 10px;
+    font-size: .9rem;
+    color: #757575;
+  }
+  weather{
+    width: 500px;
+    padding: 20px;
+    margin: 0 auto;
+    margin-top: 100px;
+    text-align: center;
+    color: white;
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 10px; 
+  }
+  
+  .wrapper .icon{
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 50%;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 22px;
+    display: inline-block;
+    align-items: center;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    color: #333;
+    text-decoration: none;
+  }
+  .wrapper .tooltip {
+    position: absolute;
+    top: 0;
+    line-height: 1.5;
+    font-size: 14px;
+    background-color: #ffffff;
+    color: #ffffff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  .wrapper .tooltip::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background-color: #ffffff;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  .wrapper .icon:hover .tooltip {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  .wrapper .icon:hover span,
+  .wrapper .icon:hover .tooltip {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+  }
+  .wrapper .facebook:hover,
+  .wrapper .facebook:hover .tooltip,
+  .wrapper .facebook:hover .tooltip::before {
+    background-color: #3b5999;
+    color: #ffffff;
+  }
+  .wrapper .twitter:hover,
+  .wrapper .twitter:hover .tooltip,
+  .wrapper .twitter:hover .tooltip::before {
+    background-color: #46c1f6;
+    color: #ffffff;
+  }
+  .wrapper .instagram:hover,
+  .wrapper .instagram:hover .tooltip,
+  .wrapper .instagram:hover .tooltip::before {
+    background-color: #e1306c;
+    color: #ffffff;
+  }
+  .wrapper .github:hover,
+  .wrapper .github:hover .tooltip,
+  .wrapper .github:hover .tooltip::before {
+    background-color: #333333;
+    color: #ffffff;
+  }
+  .wrapper .youtube:hover,
+  .wrapper .youtube:hover .tooltip,
+  .wrapper .youtube:hover .tooltip::before {
+    background-color: #de463b;
+    color: #ffffff;
+  }
+
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    /* background-image: url(weather.jpg); */
+    background-color: white;
+    min-height: 100vh;
+    min-width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  .container {
+    min-width: 50%;
+    margin: auto;
+    min-height: 100px;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: -100px;
+    
+    
+  }
+  .inputvalue {
+    padding: 10px 20px;
+    min-width: 50%;
+    margin: auto;
+    margin-top: 100px;
+    outline: black;
+    font-size: 15px;
+    margin-right: 20px;
+    font-size: bold;
+  }
+  .btn {
+    background-color: transparent;
+    color: black;
+    padding: 10px 20px;
+    font-size: 20px;
+    outline: none;
+    border: 1px solid white;
+    cursor: pointer;
+    font-size: bold;
+  }
+  
+  .display {
+    border: 2px solid white;
+    color: black;
+    max-width: 60%;
+    margin: auto;
+    font-size: 15px bold;
+    padding: 5px 10px;
+  }
+  .display h3 {
+    padding-bottom: 5px;
+  }
+
+  /* added this begin */
+
+  .inputsearch {
+    padding: 10px 20px;    
+    outline: black;
+    font-size: 15px;    
+    font-size: bold;
+  }
+  .btnsearch {
+    background-color: transparent;
+    color: black;
+    padding: 10px 20px;
+    font-size: 20px;
+    outline: none;
+    border: 1px solid white;
+    cursor: pointer;
+    font-size: bold;
+    color: white;
+  }
+
+
+.google-maps {
+    position: relative;
+    padding-bottom: 35%; 
+    height: 0;
+    overflow: hidden;
+}
+.google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 450px;
+}
+
+ /* added this end */
+  
+  @media screen and (max-width: 446px) {
+    .inputvalue {
+      padding: 8px 10px;
+      min-width: 40%;
+      margin-top: 80px;
+      outline: none;
+      font-size: 15px;
+      margin-right: 10px;
+    }
+  
+    .btn {
+      background-color: transparent;
+      color: white;
+      padding: 5px 10px;
+      font-size: 18px;
+    }
+  }
+  
+  @media screen and (max-width: 300px) {
+    .inputvalue {
+      margin-bottom: 20px;
+    }
+  }
+   /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}  
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+   
+    div.Header #Logo {
+    width: 70%;
+    max-width: 70%;
+    height: auto;
+    text-align: center;
+    margin: 0 auto;  
+    }   
+    .map img {width: 60%;
+    max-width: 60%;
+    height: auto;
+    text-align: center;
+    margin: 0 auto;}
+  }
+  
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+
+  } 
+  .float-container {
+    border: 3px solid #fff;
+   
+}
+
+.float-child {
+    width: 50%;
+    float: right;
+    
+}  
+.float-child {
+    margin-right: 20px;
+}
